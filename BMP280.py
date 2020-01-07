@@ -9,7 +9,7 @@ class pressure_sensor:
 '''
 provides pressure(hPa) and backups for temperature(C) and altitude(m)
 '''
-    def __init__(self, ground_pressure):
+    def __init__(self):
         self.i2c = busio.I2C(board.SCL, board.SDA)
         self.bmp280 = adafruit_bmp280.Adafruit_BMP280_I2C(i2c)
         '''
